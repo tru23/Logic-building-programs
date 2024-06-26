@@ -1,0 +1,143 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "program136",
+      "request": "launch",
+      "mainClass": "program136",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program135",
+      "request": "launch",
+      "mainClass": "program135",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program134",
+      "request": "launch",
+      "mainClass": "program134",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program133",
+      "request": "launch",
+      "mainClass": "program133",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program132",
+      "request": "launch",
+      "mainClass": "program132",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program131",
+      "request": "launch",
+      "mainClass": "program131",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program130",
+      "request": "launch",
+      "mainClass": "program130",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program116",
+      "request": "launch",
+      "mainClass": "program116",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program115",
+      "request": "launch",
+      "mainClass": "program115",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program113",
+      "request": "launch",
+      "mainClass": "program113",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program92_1",
+      "request": "launch",
+      "mainClass": "program92_1",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program95",
+      "request": "launch",
+      "mainClass": "program95",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program94",
+      "request": "launch",
+      "mainClass": "program94",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program93",
+      "request": "launch",
+      "mainClass": "program93",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program92",
+      "request": "launch",
+      "mainClass": "program92",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program90",
+      "request": "launch",
+      "mainClass": "program90",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
+      "name": "program89",
+      "request": "launch",
+      "mainClass": "program89",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/trupt/OneDrive/Desktop/logic building programs",
+      "program": "c:/Users/trupt/OneDrive/Desktop/logic building programs/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
