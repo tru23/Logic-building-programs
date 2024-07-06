@@ -244,10 +244,26 @@ int main()
     iRet=Count(Head);
     printf("count is %d",iRet);
 
+     DeleteFirst(&Head);
+     Display(Head);
+    iRet=Count(Head);
+    printf("count is %d",iRet);
+
+    DeleteLast(&Head);
+     Display(Head);
+    iRet=Count(Head);
+    printf("count is %d",iRet);
+
     InsertAtPos(&Head,105,3);
     Display(Head);
     iRet=Count(Head);
     printf("count is %d",iRet);
+
+    DeleteAtPos(&Head,3);
+    Display(Head);
+    iRet=Count(Head);
+    printf("count is %d",iRet);
+
 
 
 

@@ -63,17 +63,26 @@ void InsertLast(PPNODE First ,int No)
 }//TIME Complexity O(1) of function
 
 
-void Display(PNODE First )
+//void Display(PNODE First )
+//{
+ //   while(First!=NULL)
+ //   {
+ //       printf("|%d|-> ",First->data);
+ //       First=First->next;
+ //   }
+  //  printf("NULL\n");
+
+//}//TIME Complexity O(n) of function
+void Display(PNODE First)
 {
-    while(First!=NULL)
+    if(First!=NULL)
     {
-        printf("|%d|-> ",First->data);
-        First=First->next;
+        //Display(First->next);// Head recursion 
+        printf("%d\t",First->data);
+        Display(First->next);// Tail recursion
     }
-    printf("NULL\n");
-
-}//TIME Complexity O(n) of function
-
+    printf(" ");
+}
 
 int Count(PNODE First )
 {
@@ -86,6 +95,20 @@ while(First!=NULL)
     return count;
 
 }//TIME Complexity O(n) of function
+
+/*
+int Count(PNODE First)
+{
+    static int iCount=0;
+    if(First!=NULL)
+    {
+        iCount++;
+        First=First->next;
+        Count(First);
+    }
+    return iCount;
+}*/
+
 
 void DeleteFirst(PPNODE First)
 {
@@ -191,34 +214,43 @@ void InsertAtPos(PPNODE First,int No, int iPos)
 
 void DeleteAtPos(PPNODE First, int iPos)
 {
-    int iLength=0;
+    int iLength = 0;
+    int i = 0;
 
-    iLength=Count(*First);
+    PNODE temp1 = NULL;
+    PNODE temp2 = NULL;
 
-    if((iPos<1) || (iPos>iLength)) // if we have 7 nodes max pos can be 7 to delete
+    iLength = Count(*First);
+
+    if((iPos < 1) || (iPos > iLength))
     {
-        printf("Invalid position \n");
+        printf("Invalid position\n");
         return;
     }
-    if(iPos==1)
+
+    if(iPos == 1)
     {
         DeleteFirst(First);
-
     }
-    else if(iPos==iLength)
+    else if(iPos == iLength)
     {
-
         DeleteLast(First);
     }
     else
     {
+        temp1 = *First;
 
+        for(i = 1; i < iPos -1; i++)
+        {
+            temp1 = temp1 -> next;
+        }
+
+        temp2 = temp1 -> next;
+
+        temp1->next = temp2 -> next;
+        free(temp2);
     }
-
-
 }
-
-
 int main()
 {
     PNODE Head =NULL;
@@ -228,13 +260,31 @@ int main()
     InsertFirst(&Head,21);
     InsertFirst(&Head,11);
 
+    Display(Head);
+    iRet=Count(Head);
+
+    printf("count is %d \n",iRet);
+
     InsertLast(&Head,101);
     InsertLast(&Head,121);
      InsertLast(&Head,131);
     InsertLast(&Head,141);
-   
+    
+    Display(Head);
+    iRet=Count(Head);
+
+    printf("count is %d \n",iRet);
+
     printf("display after insrt as pos\n ");
+    
     InsertAtPos(&Head,105,5);
+    Display(Head);
+    iRet=Count(Head);
+
+    printf("count is %d \n",iRet);
+    printf("display after Delete at pos\n ");
+
+    DeleteAtPos(&Head,5);
     Display(Head);
     iRet=Count(Head);
 

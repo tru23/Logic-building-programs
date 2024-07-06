@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "program336",
+      "request": "launch",
+      "mainClass": "program336",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
       "name": "program136",
       "request": "launch",
       "mainClass": "program136",

@@ -48,7 +48,7 @@ int main()
     printf("Array after Reverse is\n");
     for(i=0;i<iCount;i++)
     {
-        printf("%d\n",Brr[i]);
+        printf("%d ",Brr[i]);
     }
 
     free(Brr);
