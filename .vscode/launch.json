@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "program1",
+      "request": "launch",
+      "mainClass": "Packer_Unpacker.program1",
+      "projectName": "logic building programs_b4e4d92e"
+    },
+    {
+      "type": "java",
       "name": "program336",
       "request": "launch",
       "mainClass": "program336",

@@ -42,20 +42,23 @@ DoublyCl::DoublyCl()
 }
 void DoublyCl::Display()
 {
-    if(First==NULL && Last==NULL)
+    
+    if(First == NULL && Last == NULL)
     {
-        cout<<"Linkedlist is empty";
+        cout << "Linked list is empty" << endl;
         return;
     }
-    
+
+    PNODE temp = First;  // Use a temporary pointer to traverse the list
+
     do
     {
-        cout<<"|"<<First->data<<"|<->";
-        First=First->next;
-    } while (Last->next!=First);
-
-    cout<<endl;
+        cout << "|" << temp->data << "|->";
+        temp = temp->next;
+    } while (temp != Last->next);
     
+    cout << endl;
+
 
 }
 
